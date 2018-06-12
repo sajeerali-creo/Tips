@@ -1,0 +1,52 @@
+/* image fit in a div without hide parts*/
+/* ================================= */
+.cerificates ul li img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+.class{
+  width: 100px;
+  height: 100px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+/* Fit on Background icon font postioning */
+/* ============================================= */
+.company-profile-pic{position: relative;}
+.company-profile-pic:before {
+    content: "\f132";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: Material-Design-Iconic-Font;
+    position:absolute;
+    font-size: 40px;
+    color: #4b5f76;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+ }
+
+
+ /* Text Limit css */
+ /* ======================================= */
+ .cut-text { 
+  height: 200px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
